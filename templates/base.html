@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+  <title>MindCare</title>
+
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{url_for('static', filename='logo.png')}}" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/main-home.css" rel="stylesheet">
+  <link href="assets/css/variables.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+  <!-- ChatBot -->
+  <link rel="stylesheet" type="text/css" href="css/jquery.convform.css">
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.convform.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+
+
+  <!-- =======================================================
+  * Template Name: eNno - v4.8.0
+  * Template URL: https://bootstrapmade.com/enno-free-simple-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<style>
+  #person-name {
+    color: white;
+  }
+</style>
+
+<body>
+
+
+  <!-- ChatBot -->
+  <div class="chat_icon">
+    <i class="fa fa-comments" aria-hidden="true"></i>
+  </div>
+
+
+  <div class="chat_box" style="width: 500px;">
+    <div class="my-conv-form-wrapper">
+      <form action="" method="GET" class="hidden">
+
+        <select data-conv-question="Hello! What problem are you facing?" name="category">
+          <option value="Stress">Suffering from Mental Health Issues</option>
+          <option value="Not Stress">Life is Good !!</option>
+        </select>
+
+        <div data-conv-fork="category">
+          <div data-conv-case="Stress">
+            <select data-conv-question="Tell me your problems" name="category">
+              <option value="an">Too Much Stressed</option>
+              <option value="st">Anxiety</option>
+              <option value="hp">Helplessness</option>
+              <option value="bl">Bored With Life</option>
+            </select>
+          </div>
+
+          <div data-conv-case="Not Stress" data-conv-fork="first-question4">
+            <input type="text" name="companyName"
+              data-conv-question="That's Awesome !! You can enjoy our services section">
+          </div>
+        </div>
+
+        <div data-conv-fork="category">
+          <div data-conv-case="an" data-conv-fork="first-question5">
+            <input type="text" name="tms" data-conv-question="Immediately Check out our Services Section and surely contact in this
+          helpline no below: 080 2572 2573, +91 901 9708133 ">
+          <!-- <a href=" https://www.thelivelovelaughfoundation.org/helpline "></a> -->
+          </div>
+
+          <option value="Yes">Bye</option>
+
+          <div data-conv-case="st" data-conv-fork="first-question6">
+            <input type="text" name="tms" data-conv-question="Check out Music Threapy in our Services Section !!
+          It will surely help you to get out of this">
+          </div>
+          <div data-conv-case="hp" data-conv-fork="first-question7">
+            <input type="text" name="tms" data-conv-question="Talk to more people and make new friends and most importantly check the games
+          section and play fun quizzes. You can also do exercises from our Exercise services section">
+          </div>
+          <div data-conv-case="bl" data-conv-fork="first-question8">
+            <input type="text" name="tms" data-conv-question="We have so many things to make you happy!! Play the fun games and read motivational
+           Blogs. Don't forget to do exercise everyday, do check out our Exercise section">
+          </div>
+        </div>
+
+        <input type="text" name="name" data-conv-question="Please, Enter your name">
+
+        <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
+        <input type="text" data-conv-question="Hope you liked our Services" data-no-answer="true">
+
+        <input data-conv-question="Bye">
+
+        <select data-conv-question="Bye">
+          <option value="Yes">Bye</option>
+        </select>
+
+      </form>
+    </div>
+  </div>
+  <!-- ChatBot end -->
+
+
+
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><img src="{{url_for('static', filename='logo.png')}}" alt="" class="src"><a href="#">MindCare</a>
+      </h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#testimonials">Blogs</a></li>
+          <!-- <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li> -->
+          <li><a class="nav-link scrollto" href="#cta">Call to Action</a></li>
+          {% if current_user.is_authenticated and current_user.usn %}
+           <li class="dropdown"><a href="/login"><span>Welcome {{current_user.usn}}</span> <i
+                class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/logout">Logout</a></li>
+
+            </ul>
+            </li>
+            {% else %}
+            <li class="dropdown"><a href="#"><span>SIGN IN</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="/signup">Sign Up</a></li>
+
+                <li><a href="/login">Login</a></li>
+              </ul>
+            </li>
+            {% endif %}
+
+            <li><a class="getstarted scrollto" href="#services">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      {% block body %}
+
+
+      {% endblock body %}
+
+
+    </div>
+  </header><!-- End Header -->
+
+
+
+
+
+
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>MindCare </h1>
+          <h2>A one stop solution to all your mental issues ! <br> We analyze the psychological and mental health
+            conditions and provide effective solutions <h2>
+              <div class="d-flex">
+                <a href="#services" class="btn-get-started scrollto" style="text-decoration: none;">Get Started</a>
+                <a href="" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch
+                    Video</span></a>
+              </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <img src="assets/img/intro-img.svg" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+
+
+
+
+
+  <main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+    <!-- <section id="featured-services" class="featured-services">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-laptop"></i></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-card-checklist"></i></div>
+
+              <h4 class="title"><a href="">Dolor Sitema</a></h4>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-clipboard-data"></i></div>
+              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Featured Services Section -->
+
+
+
+
+
+
+
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-title">
+          <span>About Us</span>
+          <h2>About Us</h2>
+        </div>
+        
+        <h3 style="color: white; 
+        font-size: 23px;">MindCare is a mental health solution that aims to provide users with easy access to resources 
+          related to mental wellbeing.</h3>
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="assets/img/about.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+            <ul style="color: white;">
+              <li><i class="bi bi-check-circle"></i>Check your Stress Level and also check the analysis of people suffering from mental stress across the world..</li>
+              <li><i class="bi bi-check-circle"></i>MindCare uses fun-psychological tests to cure patients. It includes Music Therapy for patients which reduces stress levels by meditating.</li>
+              <li><i class="bi bi-check-circle"></i> Here users can play brainstorming games and play fun quizzes which will help them to learn things in a fun way.
+                Yoga and Exercises are very important in order to reduce stress level which is also available on our website.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+    <!-- ======= Counts Section ======= -->
+    <!-- <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Clients</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Projects</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Hours Of Support</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Hard Workers</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Counts Section -->
+
+
+
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Services</span>
+          <h2>Services</h2>
+          <p>Get all the Solution to your Problems and Enjoy Your Life. </p>
+        </div>
+
+        <div class="row gy-5" style="display:flex; justify-content: space-around; margin-bottom: 30px;">
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+            <div class="service-item">
+              <div class="img">
+                <img src="services/analysis.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi-activity"></i>
+                </div>
+                <a href="{{url_for('analysis')}}" class="stretched-link">
+                  <h3>Analysis</h3>
+                </a>
+                <p>Pictorial/Graphical representation of various stress related data which include types of stress, reasons for stress, subreddit posts versus the social karma points, etc.</p>
+                <a href="{{url_for('analysis')}}" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+            <div class="service-item">
+              <div class="img">
+                <img src="services/stress-detect.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-bounding-box-circles"></i>
+                </div>
+                <a href="/i" class="stretched-link">
+                  <h3>Stress Detection</h3>
+                </a>
+                <p>Predict your stress level by taking Sleeping Hours, Blood Pressure Rate, Respiration Rate and Maximum Heart Rate as input.</p>
+                <a href="/i" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+        <div class="section-title" style="margin-top: 10px;">
+          <span>Solutions</span>
+          <h2>Solutions</h2>
+        </div>
+
+
+        <div class="row gy-5">
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+            <div class="service-item">
+              <div class="img">
+                <img src="services/music.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-bounding-box-circles"></i>
+                </div>
+                <a href="{{url_for('music')}}" class="stretched-link">
+                  <h3>Music Therapy</h3>
+                </a>
+                <p>Music is a Therapy which acts as a medicine. Visit this section and improve your mood as Music has the healing power..</p>
+                <a href="{{url_for('music')}}" class="stretched-link"></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+            <div class="service-item">
+              <div class="img">
+                <img src="services/games.png" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-calendar4-week"></i>
+                </div>
+                <a href="{{url_for('quizandgame')}}" class="stretched-link">
+                  <h3>Quiz and Fun Games</h3>
+                </a>
+                <p>Quizzes will help the user to increase their knowledge and brainstorming skills. Our Game will help the user to test their concentration power.</p>
+                <a href="{{url_for('quizandgame')}}" class="stretched-link"></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
+            <div class="service-item">
+              <div class="img">
+                <img src="services/yoga.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-chat-square-text"></i>
+                </div>
+                <a href="{{url_for('exercises')}}" class="stretched-link">
+                  <h3>Exercises</h3>
+                </a>
+                <p>Health is not about the weight you lose but about the life you gain.
+                  Your body and mind both will be flexible and relaxed by doing Yoga</p>
+                <a href="{{url_for('exercises')}}" class="stretched-link"></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+
+
+
+
+
+
+
+
+    </section><!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials ">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Blogs</span>
+          <h2>Blogs</h2>
+          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <a href="https://thereseborchard.com/" style="text-decoration: none;">
+                <div class="testimonial-item">
+                  <p style="color: black;">
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Therese Bouchard is a mental health advocate and writer, and has been named a top 10 influencer in
+                    the mental health community.
+                    Her blog covers mental health and holistic health, with topics that include depression, generalized
+                    anxiety disorder, and nutrition.
+                  </p>
+                  <img src="blogs/1.jpg" class="testimonial-img" alt="">
+                  <h3 id="person-name">Therese Bouchard</h3>
+                  <!-- <h4>Ceo &amp; Founder</h4> -->
+                </div>
+              </a>
+            </div>
+
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <a href="https://www.talkspace.com/blog/" style="text-decoration: none;">
+                <div class="testimonial-item">
+                  <p style="color: black;">
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Talkspace is one of the top mental health blogs around.
+
+                    The service aims to make therapy accessible and affordable, and shares useful and practical advice
+                    and tips on how to manage mental health through their blog.
+                  </p>
+                  <img src="blogs/2.png" class="testimonial-img" alt="">
+                  <h3 id="person-name">
+                    Bisma Anwar</h3>
+                  <!-- <h4>Ceo &amp; Founder</h4> -->
+                </div>
+              </a>
+            </div>
+
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <a href="https://chipur.com/" style="text-decoration: none;">
+                <div class="testimonial-item">
+                  <p style="color: black;">
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Chipur is a blog dedicated to helping people with anxiety, depression, and bipolar through learning.
+
+                    The blog was founded by Bill White, a mental health professional, and features hundreds of articles
+                    on mood disorders and the science behind them.
+                  </p>
+                  <img src="blogs/person.png" class="testimonial-img" alt="">
+                  <h3 id="person-name">Bill White</h3>
+                  <!-- <h4>Ceo &amp; Founder</h4> -->
+                </div>
+              </a>
+            </div>
+
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <a href="https://purplepersuasion.wordpress.com/" style="text-decoration: none;">
+                <div class="testimonial-item">
+                  <p style="color: black;">
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Purple Persuasion is a mental health blog by Charlotte Walker, a service user with bipolar disorder.
+
+                    Charlotte created the blog to connect with others in similar situations, and it documents her
+                    journey and thoughts on living with bipolar.
+                  </p>
+                  <img src="blogs/3.png" class="testimonial-img" alt="">
+                  <h3 id="person-name"> Purple Persuasion</h3>
+                  <!-- <h4>Ceo &amp; Founder</h4> -->
+                </div>
+              </a>
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <a href="https://www.blurtitout.org/2022/08/25/sleep-problems/" style="text-decoration: none;">
+                <div class="testimonial-item">
+                  <p style="color: black;">
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    The Blurt Foundation is a social enterprise that’s dedicated to helping people with depression.
+
+                    Over on the blog, the Blurt team shares insights into living with depression and anxiety, as well as
+                    practical tips like meal planning when you have low energy.
+
+                  </p>
+                  <img src="blogs/person.png" class="testimonial-img" alt="">
+                  <h3 id="person-name">Blurt Team</h3>
+                  <!-- <h4>Ceo &amp; Founder</h4> -->
+                </div>
+              </a>
+            </div>
+
+            <!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta section-bg"
+      style="
+    background-repeat: no-repeat;
+    background-attachment: fixed;background-image: url(https://envato-shoebox-0.imgix.net/68fd/b18f-a556-446f-a60d-4c8a83d1a9e0/_Z0A5665.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1600&s=a5dbc5b48a5f6c54c13cb6af8aed9312);">
+      <div class=" container">
+
+        <div class="text-center">
+          <h3>Call To Action</h3>
+          <p> Visit this site to get access to all the helpline numbers of all the doctors and contact 
+            them in case of any emergency.
+          </p>
+          <a class="cta-btn" href="https://www.thelivelovelaughfoundation.org/helpline" style="text-decoration: none;">Call To Action</a>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Cta Section -->
+
+    <!-- ======= Team Section ======= -->
+    <!-- <section id="team" class="team ">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Team</span>
+          <h2>Team</h2>
+          <p style="color: white;">Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/team-1.jpg" alt="">
+              <h4>Walter White</h4>
+              <span>Chief Executive Officer</span>
+              <p>
+                Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut
+                aut
+              </p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/team-2.jpg" alt="">
+              <h4>Sarah Jhinson</h4>
+              <span>Product Manager</span>
+              <p>
+                Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+              </p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/team-3.jpg" alt="">
+              <h4>William Anderson</h4>
+              <span>CTO</span>
+              <p>
+                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
+              </p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <!-- <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Contact</span>
+          <h2>Contact</h2>
+          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 5589 55488 55s</p>
+              </div>
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="{{url_for('static', filename='forms/contact.php')}}" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6 mt-3 mt-md-0">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+
+
+
+  <footer id="footer">
+
+    <div class="footer-top">
+
+      <div class="container">
+
+        <div class="row  justify-content-center">
+          <div class="col-lg-6">
+            <h3>MindCare</h3>
+            <p>You can contact us in the social media handles mentioned below. We will try to answer all your 
+              queries. 
+            </p>
+          </div>
+        </div>
+
+
+        <div class="social-links">
+          <a href="https://twitter.com/tandrima_singha" target="blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/tandrima-singha-20b2091b6/" target="blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/jayeshshaw" target="blank" class="github"><i class="bx bxl-github"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>MindCare</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">  Designed by <a href="https://github.com/jayeshshaw">Jayesh & Tandrima</a>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main-home.js"></script>
+
+</body>
+
+</html>
