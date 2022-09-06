@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Analysis</title>
+  <link rel="icon" href="https://source.unsplash.com/1600x900/?analysis">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<style>
+  body {
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  body {
+    background-color: #efffff;
+    background-size: 50000% 50000%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+  .main {
+    margin: auto;
+    max-width: fit-content;
+    padding: 10px;
+  }
+
+  h1 {
+    color: black;
+    font-family: cursive;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* .inner{
+  position:absolute;
+  } */
+  #card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    background-color: blanchedalmond;
+    background: white;
+    /* height: fit-content; */
+
+    border-radius: 20px;
+    height: 50%;
+    /* width: 400px; */
+  }
+
+  .cantainer {
+    padding: 20px;
+    background-color: blanchedalmond;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    /* border: 2px solid black; */
+    position: relative;
+  }
+
+  p {
+    color: black;
+    font-family: cursive;
+
+  }
+
+  .containerf {
+    padding: 10px;
+    background: radial-gradient(ellipse at 50% 100%, #a0C580 70%, transparent 70%);
+    background-color: #aefce8;
+    margin: auto;
+    width: 50%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    /* border: 2px solid black; */
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /**********************************/
+  /*		 Styling Footer	 */
+  /**********************************/
+
+  /*** Adding Styles to Company Details ***/
+  .company-details {
+    overflow: hidden;
+    padding: 3em 0em;
+    background: #E3F0F7;
+    text-align: center;
+    margin-top: 5em;
+  }
+
+  #footer #col1,
+  #footer #col2,
+  #footer #col3 {
+    float: inline-end;
+    width: 320px;
+    padding: 0px 40px 0px 40px;
+  }
+
+  #footer #icon {
+    display: block;
+    margin-bottom: 1em;
+    font-size: 3em;
+  }
+
+  /*** Adding Styles to Copyright Div ***/
+  .copyright {
+    overflow: hidden;
+    padding: 3em 0em;
+    border-top: 20px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+    background: #4CAF50;
+  }
+
+  .copyright p {
+    letter-spacing: 1px;
+    font-size: 0.90em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .copyright a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  /* Styling Social Icons */
+  ul.contact {
+    margin: 0;
+    padding: 2em 0em 0em 0em;
+    list-style: none;
+  }
+
+  ul.contact li {
+    display: inline-block;
+    padding: 0em 0.10em;
+    font-size: 1em;
+  }
+
+  ul.contact li a {
+    color: #FFF;
+    display: inline-block;
+    background: #4C93B9;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+</style>
+
+<body>
+  <div class="main"
+    style="padding: 30px; width: fit-content; background: radial-gradient(ellipse at 50% 0%, #6ecada 70%, transparent 70%);">
+    <div class="containerf" id="card">
+      <a href="#" style="text-decoration: none;">
+        <h1>Analysis of Stress across the World.</h1>
+      </a>
+    </div>
+
+    <div class="cantainer left" id="card" style="width: 44% ; float:left;">
+      <div id='chart' class='chart'></div>
+      <p class='chart'>According to analysis we could easily understand, people suffer from
+        stress mostly due to Relationship, then due to anxiety. Also, domestic violence is another
+        problem due to which people suffer from Mental Health issues.</p>
+    </div>
+    <div class="cantainer right" id="card" style="width: 44% ; float:right;">
+      <div id='chart2' class='chart2 inner'></div>
+      <p>This plot clearly shows that there are more people in Stress than people
+        who are Not in stress. There is a growing concern about the mental health of individuals across the globe. As
+        students, we understand how stress can take over your personal
+        as well as professional life. </p>
+    </div>
+    <div class="cantainer left" id="card" style="width: 44% ; float:left;">
+      <div id='chart3' class='chart3 inner'></div>
+      <p>This is the analysis of sentiments with the types of mental health issues which shows that
+        Relationship stress and ptsd stress has the most sentiment breakdown due to which prople suffer from more mental
+        health issues.
+      </p>
+    </div>
+    <div class="cantainer right" id="card" style="width: 44% ; float:right;">
+      <div id='chart4' class='chart4'></div>
+      <p>This analysis shows us the subreddit posts versus the social karma points. Here also we
+        see that relationship is on top then comes the anxiety stress.
+      </p>
+    </div>
+    <div class="cantainer left" id="card" style="width: 44% ; float:left;">
+      <div id='chart5' class='chart5'></div>
+      <p> This plot shows the count of confidence level a person is having. There are a huge
+        number of people with a very low confidence level.
+      </p>
+    </div>
+
+    <div class="cantainer right" id="card" style="width: 44% ; float:right;">
+      <div id='chart6' class='chart6'></div>
+      <p>This is a Histogram plot to show the types of health issues with its count who clearly shows
+        that what are all the issues prople are dealing with.</p>
+    </div>
+  </div>
+  
+
+
+</body>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script type="text/javascript">
+  var graphs = {{ graphJSON | safe}};
+  Plotly.plot('chart', graphs, {});
+  var graphs2 = {{ graphJSON2 | safe}};
+  Plotly.plot('chart2', graphs2, {});
+  var graphs3 = {{ graphJSON3 | safe}};
+  Plotly.plot('chart3', graphs3, {});
+  var graphs4 = {{ graphJSON4 | safe}};
+  Plotly.plot('chart4', graphs4, {});
+  var graphs5 = {{ graphJSON5 | safe}};
+  Plotly.plot('chart5', graphs5, {});
+  var graphs6 = {{ graphJSON6 | safe}};
+  Plotly.plot('chart6', graphs6, {});
+</script>
+
+</html>
