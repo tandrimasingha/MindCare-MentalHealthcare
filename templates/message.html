@@ -1,0 +1,16 @@
+{% with messages=get_flashed_messages(with_categories=true) %}
+{% if messages %}
+{% for category,message in messages %}
+
+<div class="alert alert-{{category}} alert-dismissible fade show" role="alert">
+  <strong>{{message}}</strong> 
+  
+  {% if current_user.is_authenticated and current_user.usn %}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+  {% endif %}
+</div>
+
+{% endfor %}
+{% endif %}
+{% endwith %}
