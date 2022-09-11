@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stress Level Detection</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="icon" href="https://source.unsplash.com/1600x900/?healthcare">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="icon" href="https://source.unsplash.com/1600x900/?healthcare">
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+        background: #222;
+        background-image: url('https://source.unsplash.com/1600x900/?study');
+        font-size: 120%;
+    }
+
+    .card {
+        background: #000000d0;
+        color: white;
+        padding: 2em;
+        border-radius: 30px;
+        width: 100%;
+        max-width: 500px;
+        margin: 0.75em;
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .butn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        align-content: center;
+    }
+
+    /* button {
+    padding: 10px;
+    background-color: white;
+  border: none;
+  color: black;
+  cursor: pointer;
+  
+  margin: 10px;
+  padding: 15px 32px;
+  border-radius: 10%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+} */
+
+    input.search-bar {
+        border: none;
+        outline: none;
+        /* padding: 0.4em; */
+        border-radius: 15px;
+        background: #7c7c7c2b;
+        color: white;
+        font-family: inherit;
+        font-size: 95%;
+        width: calc(100% - 100px);
+    }
+
+    button:hover {
+        background: whitesmoke;
+    }
+
+
+    .flex {
+        display: flex;
+        align-items: center;
+    }
+
+    .description {
+        text-transform: capitalize;
+        margin-left: 8px;
+    }
+</style>
+
+<body>
+    <div class="card login">
+        <div class="butn" style="padding: 0; margin: 0;">
+            <h3><u>Detect your Stress Level</u> </h3>
+        </div>
+        <br>
+        <form action="{{ url_for('stressdetect')}}" method="post">
+            <div class="mb-3">
+                <h5>Enter Sleeping Hours</h5>
+
+                <input type="text" class="search-bar" name="rr" max="24" min="1"
+                    placeholder="Enter a number from 1 to 24" required="required" />
+            </div>
+            <div class="mb-3">
+                <h5>Enter Blood Pressure Rate</h5>
+
+                <input type="text" class="search-bar" name="bp" max="200" min="90"
+                    placeholder="Enter a number from 90 to 200" required="required" />
+            </div>
+            <div class="mb-3">
+                <h5>Enter Respiration Rate</h5>
+                <input type="text" class="search-bar" name="bo" min="100" max="700"
+                    placeholder="Enter a number from 100 to 700" required="required" />
+            </div>
+            <div class="mb-3">
+                <h5>Enter Maximum Heart Rate</h5>
+
+                <input type="text" class="search-bar" name="hr" min="50" max="200"
+                    placeholder="Enter a number from 50 to 200" required="required" />
+            </div>
+
+            <div class="butn">
+                <button type="submit" class="btn btn-info" style="
+                    margin: 0 auto;
+                    display: block;" value="Predict"><b>Predict</b></button>
+            </div>
+
+        </form>
+        <div class="butn"><b>{{ prediction_text3}}</b></div>
+
+    </div>
+</body>
+<script src="./script.js"></script>
+
+
+</html>
