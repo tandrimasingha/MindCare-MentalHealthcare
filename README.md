@@ -4,11 +4,11 @@
 
 *****
 
-[![GitHub last commit](https://img.shields.io/github/last-commit/jayeshshaw/MindCare?label=Last%20commit&color=green&logo=git&logoColor=white&style=flat-square)](https://github.com/tandrimasingha/Data-Analysis)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jayeshshaw/MindCare?label=Code%20size&logo=python&logoColor=white&style=flat-square)
-![GitHub repo size](https://img.shields.io/github/repo-size/jayeshshaw/MindCare?label=Repo%20size&color=red&logo=github&logoColor=white&style=flat-square)
-![GitHub stars](https://img.shields.io/github/stars/jayeshshaw/MindCare?label=Stars&logo=github&style=flat-square)
-![GitHub issues](https://img.shields.io/github/issues/jayeshshaw/MindCare?label=Issues&color=yellow&logo=github&style=flat-square)
+[![GitHub last commit](https://img.shields.io/github/last-commit/tandrimasingha/MindCare-MentalHealthcare?label=Last%20commit&color=green&logo=git&logoColor=white&style=flat-square)](https://github.com/tandrimasingha/Data-Analysis)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/tandrimasingha/MindCare-MentalHealthcare?label=Code%20size&logo=python&logoColor=white&style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/tandrimasingha/MindCare-MentalHealthcare?label=Repo%20size&color=red&logo=github&logoColor=white&style=flat-square)
+![GitHub stars](https://img.shields.io/github/stars/tandrimasingha/MindCare-MentalHealthcare?label=Stars&logo=github&style=flat-square)
+![GitHub issues](https://img.shields.io/github/issues/tandrimasingha/MindCare-MentalHealthcare?label=Issues&color=yellow&logo=github&style=flat-square)
 
 ![image](https://user-images.githubusercontent.com/78292851/188284903-1e3ee4db-0612-4ab0-b463-b7be8c920c63.png)
 <br><br>
