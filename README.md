@@ -61,7 +61,7 @@ MindCare is a mental health solution that aims to provide users with easy access
 
 ##  🔴  UI Of The Web Application
 
-### 1. Home Page
+### 1. Home Page(Mind Care)
 <pre>
 <img src="https://user-images.githubusercontent.com/78292851/188285404-ea2e1cbf-7957-4e18-a792-fd115d9e3e4a.png" width="1010"> <img src="https://user-images.githubusercontent.com/78292851/188285416-21085822-0b60-496c-bb79-81d0322de913.png" width="1010"> 
 </pre>
