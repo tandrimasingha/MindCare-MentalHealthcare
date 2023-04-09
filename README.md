@@ -133,3 +133,4 @@ Open VSCode -
 ## Contributors:
 1. Jayesh Kumar Shaw
 2. Tandrima Singha
+3. Soumyo Nath Tripathy
