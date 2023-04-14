@@ -58,6 +58,18 @@ MindCare is a mental health solution that aims to provide users with easy access
 
 ## Demo Video Link : https://youtu.be/7BL3_NhBIfs
 
+## Run Locally
+
+Open VSCode -
+
+1.1 `git clone <repo link>`
+
+1.2 `cd MindCare`
+
+1.3 `pip install -r requirements.txt `
+
+1.4 `flask run`
+
 
 ##  🔴  UI Of The Web Application
 
@@ -118,17 +130,7 @@ MindCare is a mental health solution that aims to provide users with easy access
 </pre>
 
 
-## Run Locally
 
-Open VSCode -
-
-1.1 `git clone <repo link>`
-
-1.2 `cd MindCare`
-
-1.3 `pip install -r requirements.txt `
-
-1.4 `flask run`
 
 ## Contributors:
 1. Jayesh Kumar Shaw
